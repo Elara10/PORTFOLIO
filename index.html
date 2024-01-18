@@ -41,19 +41,22 @@
             list-style: none;
             margin: 0 23px;
         }
-        nav ul li a{
-               text-decoration: none;   
-               color: white;         
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
         }
-        nav ul li a:hover{
+
+        nav ul li a:hover {
             color: rgb(190, 190, 203);
             font-size: 1.1rem;
         }
-        main hr{
+
+        main hr {
             border: 0;
             background: rgb(167, 147, 226);
             height: 1.2px;
-            margin:40px 84px;
+            margin: 40px 84px;
         }
 
         .left {
@@ -75,29 +78,117 @@
             font-size: 3rem;
             margin: 70px 0;
         }
- 
+
         .rightSection {
             /* background-color: red;  */
             width: 30%;
-            height: 20%; 
-         }
+            height: 20%;
+        }
 
         .rightSection img {
             width: 100%;
             height: 130%;
         }
-        .purple{
+
+        .purple {
             color: blueviolet;
         }
-        #element{
+
+        #element {
             color: blueviolet
         }
-        .secondSection{
+
+        .secondSection {
             max-width: 80vh;
             /* margin: auto; */
             text-indent: 25%;
+            font-size: 1.5rem;
+            height: 80vh;
         }
 
+        .text-grey {
+            color: grey;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 35px 70px 50px 150px;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            background: white;
+            height: 93px;
+            width: 1px;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -40px;
+            left: -15px;
+        }
+
+        .vertical-title {
+
+            margin: 50px 200px 23px 1px;
+            position: relative;
+            font-size: 14px;
+            /* display: flex; */
+        }
+
+        .vertical-desc {
+
+            font-size: 9px;
+            position: relative;
+            /* margin: 23px 20px; */
+            top: 10px;
+            color: grey;
+            width: 150px;
+            text-indent: -2px;
+        }
+
+        footer {
+            background-color: rgb(15, 14, 16);
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            font-size: 24px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 323px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            border: 2px solid  white;
+            border-radius: 6px ;
+            background-color: rgb(28, 3, 86);
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .leftSection .button{
+            padding: 50px 0;
+        }
     </style>
 </head>
 
@@ -107,11 +198,16 @@
             <div class="left">Isha's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="/"><li>Home</a></li>
-                    <li><a href="/"><li>About</a></li>
-                    <li><a href="/"><li>Services</a></li>
-                    <li><a href="/"><li>Projects</a></li>
-                    <li><a href="/"><li>Contact Me</a></li>
+                    <li><a href="/">
+                    <li>Home</a></li>
+                    <li><a href="/">
+                    <li>About</a></li>
+                    <li><a href="/">
+                    <li>Services</a></li>
+                    <li><a href="/">
+                    <li>Projects</a></li>
+                    <li><a href="/">
+                    <li>Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -122,6 +218,11 @@
                 Hi,My name is <span class="purple">Isha</span>
                 <div>and I am a </div>
                 <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+
+                </div>
 
             </div>
             <div class="rightSection">
@@ -130,16 +231,141 @@
         </section>
         <hr>
         <section class="secondSection ">
-            <h1>Past Experience</h1>
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="htmll.jpeg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quo pariatur possimus labore,cum
+                        saepe rem amet. Commodi libero fugit, necessitatibus porro, magnam enim autem officia, vero
+                        dolorum ipsum ad.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="htmll.jpeg" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quo pariatur possimus labore,cum
+                        saepe rem amet. Commodi libero fugit, necessitatibus porro, magnam enim autem officia, vero
+                        dolorum ipsum ad.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="htmll.jpeg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quo pariatur possimus labore,cum
+                        saepe rem amet. Commodi libero fugit, necessitatibus porro, magnam enim autem officia, vero
+                        dolorum ipsum ad.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="htmll.jpeg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quo pariatur possimus labore,cum
+                        saepe rem amet. Commodi libero fugit, necessitatibus porro, magnam enim autem officia, vero
+                        dolorum ipsum ad.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="htmll.jpeg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quo pariatur possimus labore,cum
+                        saepe rem amet. Commodi libero fugit, necessitatibus porro, magnam enim autem officia, vero
+                        dolorum ipsum ad.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="htmll.jpeg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quo pariatur possimus labore,cum
+                        saepe rem amet. Commodi libero fugit, necessitatibus porro, magnam enim autem officia, vero
+                        dolorum ipsum ad.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="htmll.jpeg" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum quo pariatur possimus labore,cum
+                        saepe rem amet. Commodi libero fugit, necessitatibus porro, magnam enim autem officia, vero
+                        dolorum ipsum ad.
+                    </div>
+                </div>
+
+
+
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3><b>Isha's developer Portfolio</b></h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; ishasportfolio.com | All rights reserved
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Web developer', 'Video Editor'],
-          typeSpeed: 50,
+            strings: ['Web developer', 'Video Editor.'],
+            typeSpeed: 50,
         });
-      </script>
+    </script>
 </body>
 
 </html>
